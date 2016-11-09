@@ -1,5 +1,5 @@
 {
-  "name": "grunt-selenium-webdriver",
+  "name": "grunt-selenium-webdriver-master",
   "description": "Starts and stops selenium in webdriver or hub mode for use with 3rd party CI platforms where phantomjs / chromedriver can have issue with selenium",
   "version": "0.2.530",
   "homepage": "https://github.com/connectid/grunt-selenium-webdriver",
