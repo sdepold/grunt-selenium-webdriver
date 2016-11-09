@@ -41,14 +41,14 @@ if ( fs.existsSync('jar/' + JAR_NAME) ) {
     // mac plugin test - ie a test of this respository
     selOptions.push ( 'jar/' + JAR_NAME );
 // this fixes a bug with ubuntu builds https://github.com/levexis/grunt-selenium-webdriver/issues/2
-} else if ( fs.existsSync( 'node_modules/grunt-selenium-webdriver/jar/' + JAR_NAME ) ) {
+} else if ( fs.existsSync( 'node_modules/grunt-selenium-webdriver-master/jar/' + JAR_NAME ) ) {
 //    console.log ('branch 2a');
     // mac as module
-    selOptions.push ( 'node_modules/grunt-selenium-webdriver/jar/' + JAR_NAME );
-} else if ( fs.existsSync('../node_modules/grunt-selenium-webdriver/jar/' + JAR_NAME ) ) {
+    selOptions.push ( 'node_modules/grunt-selenium-webdriver-master/jar/' + JAR_NAME );
+} else if ( fs.existsSync('../node_modules/grunt-selenium-webdriver-master/jar/' + JAR_NAME ) ) {
 //    console.log ('branch 3a');
     // required for some unix environments?
-    selOptions.push ( '../node_modules/grunt-selenium-webdriver/jar/' + JAR_NAME );
+    selOptions.push ( '../node_modules/grunt-selenium-webdriver-master/jar/' + JAR_NAME );
 } else {
     // if adding new cases please identify environment so that changes can be maintained
     throw new Error('Unable to find path to selenium, please run npm install and find the relative path for your system. Current location: [' + __dirname + ']. '  + getEnv() );
